@@ -1,0 +1,6 @@
+opensearch-py
+json-repair
+html2text
+beautifulsoup4
+PyPDF2
+pdfplumber

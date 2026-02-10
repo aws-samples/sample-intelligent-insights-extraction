@@ -1,0 +1,17 @@
+{
+  "name": "html-readability-lambda",
+  "version": "1.0.0",
+  "description": "AWS Lambda function for HTML readability using Mozilla's Readability",
+  "main": "index.js",
+  "dependencies": {
+    "@mozilla/readability": "^0.4.4",
+    "aws-sdk": "^2.1354.0",
+    "jsdom": "^22.1.0",
+    "axios": "^1.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "Apache-2.0"
+}

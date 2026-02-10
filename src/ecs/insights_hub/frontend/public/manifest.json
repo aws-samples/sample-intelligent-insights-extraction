@@ -1,0 +1,8 @@
+{
+  "short_name": "Insights Hub",
+  "name": "Insights Hub - Design Discovery Platform",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

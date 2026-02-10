@@ -1,0 +1,9 @@
+# Playwright for browser automation
+boto3==1.40.18
+bedrock-agentcore
+playwright>=1.40.0
+requests
+fastfeedparser
+regex
+
+
