@@ -345,12 +345,6 @@ For production deployments, consider:
 - Implementing email domain validation for user registration
 - Adjusting CloudWatch log retention to reduce costs
 
-## Documentation
-
-- [Data Schema](docs/data_schema.md) - Database structure and field definitions
-- [EC2 Setup Guide](docs/ec2_prerequisites_setup.md) - Setting up prerequisites on EC2
-- [Prototype Report](docs/PrototypeReport.md) - Detailed project documentation
-
 ## Contributing
 
 Contributions are welcome! Feel free to open issues or submit pull requests.
