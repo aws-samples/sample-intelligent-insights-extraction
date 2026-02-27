@@ -103,7 +103,7 @@ class InsightsHubECS(Construct):
                 os.path.dirname(os.path.dirname(__file__)), "src/ecs/insights_hub"
             ),
             file="Dockerfile.backend",
-            platform=ecr_assets.Platform.LINUX_AMD64,  # bug fix for m1 chip issue for docker
+            platform=ecr_assets.Platform.LINUX_ARM64,  # Use ARM64 for Apple Silicon
         )
 
         # Build Docker image for frontend from local Dockerfile
@@ -114,7 +114,7 @@ class InsightsHubECS(Construct):
                 os.path.dirname(os.path.dirname(__file__)), "src/ecs/insights_hub"
             ),
             file="Dockerfile.frontend",
-            platform=ecr_assets.Platform.LINUX_AMD64,  # bug fix for m1 chip issue for docker
+            platform=ecr_assets.Platform.LINUX_ARM64,  # Use ARM64 for Apple Silicon
         )
 
         # Environment variables for backend
@@ -157,6 +157,10 @@ class InsightsHubECS(Construct):
             cluster=cluster,
             memory_limit_mib=2048,
             cpu=1024,
+            runtime_platform=ecs.RuntimePlatform(
+                cpu_architecture=ecs.CpuArchitecture.ARM64,
+                operating_system_family=ecs.OperatingSystemFamily.LINUX,
+            ),
             security_groups=[backend_sg],
             assign_public_ip=True,  # For internet access
             health_check=ecs.HealthCheck(
@@ -209,6 +213,10 @@ class InsightsHubECS(Construct):
             cluster=cluster,
             memory_limit_mib=1024,
             cpu=512,
+            runtime_platform=ecs.RuntimePlatform(
+                cpu_architecture=ecs.CpuArchitecture.ARM64,
+                operating_system_family=ecs.OperatingSystemFamily.LINUX,
+            ),
             security_groups=[frontend_sg],
             assign_public_ip=True,  # For internet access
             task_image_options=ecs_patterns.ApplicationLoadBalancedTaskImageOptions(

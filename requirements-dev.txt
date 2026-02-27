@@ -6,7 +6,7 @@ jsonschema
 mcp
 opensearch-py
 Pillow
-projen==0.95.0
+projen==0.99.17
 pydantic>=2.0
 requests
 tenacity
