@@ -4,7 +4,7 @@ from projen.awscdk import AwsCdkPythonApp
 
 
 setting = {
-    "project_name": "insights-michelle",
+    "project_name": "insights-test",
     "stage": "dev",
     "model_extraction": "us.anthropic.claude-3-7-sonnet-20250219-v1:0",
     "model_embedding": "cohere.embed-multilingual-v3",
