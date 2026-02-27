@@ -30,7 +30,7 @@
     },
     {
       "name": "projen",
-      "version": "0.93.0",
+      "version": "0.99.17",
       "type": "devenv"
     },
     {
@@ -56,7 +56,7 @@
     },
     {
       "name": "constructs",
-      "version": "^10.0.5",
+      "version": "^10.5.1",
       "type": "runtime"
     },
     {
