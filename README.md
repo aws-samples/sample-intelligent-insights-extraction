@@ -60,7 +60,7 @@ The system uses event-driven architecture, so everything happens automatically.
 1. Clone and set up the environment:
 ```bash
 git clone <repository-url>
-cd intelligent-insights-collector
+cd sample-intelligent-insights-extraction
 python3 -m venv .env
 source .env/bin/activate
 ```
