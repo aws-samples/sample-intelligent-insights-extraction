@@ -13,8 +13,8 @@ setting = {
 }
 
 project = AwsCdkPythonApp(
-    author_email="dmhong@amazon.com,jiatin@amazon.com",
-    author_name="Michelle Hong,Ting Jia",
+    author_email="",
+    author_name="",
     cdk_version="2.1.0",
     module_name="src",
     name="sample-intelligent-insights-extraction",
